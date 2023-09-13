@@ -36,9 +36,15 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
     "@ant-design/pro-components": "^2.3.57",
@@ -46,6 +52,8 @@
     "@umijs/route-utils": "^2.2.2",
     "antd": "^5.2.2",
     "classnames": "^2.3.2",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "omit.js": "^2.0.2",
@@ -71,7 +79,8 @@
     "@umijs/lint": "^4.0.52",
     "@umijs/max": "^4.0.52",
     "cross-env": "^7.0.3",
-    "eslint": "^8.34.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-jest": "^27.2.3",
     "express": "^4.18.2",
     "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
@@ -79,11 +88,13 @@
     "jest-environment-jsdom": "^29.4.3",
     "lint-staged": "^10.5.4",
     "mockjs": "^1.1.0",
-    "prettier": "^2.8.4",
+    "prettier": "2.8.8",
     "swagger-ui-dist": "^4.15.5",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5",
     "umi-presets-pro": "^2.0.2"
   },
-  "engines": { "node": ">=12.0.0" }
+  "engines": {
+    "node": ">=12.0.0"
+  }
 }
